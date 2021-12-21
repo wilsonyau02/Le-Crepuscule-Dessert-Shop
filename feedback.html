@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer's feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="france">
+        </div>
+        <div class="frow">
+            <div class="fcolumn">
+           <img src="feedback/google.png" id="google">
+            <h1 class="givefeedback">Drop us a feedback!</h1>
+            <form id="feedBackForm" >
+              <div class="form-group">
+                  <img src="feedback/user.png" alt="user" id="feedback-icon">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="Cname"  placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                  <img src="feedback/phone-call.png" alt="phone" id="feedback-icon">
+                  <label for="number">Phone No.</label>
+                  <input type="tel" id="Cphone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone No." required>
+              </div>
+          
+              <div class="form-group">
+                  <img src="feedback/envelope.png" alt="email" id="feedback-icon">
+                  <label for="email">Email</label>
+
+                  <input type="email" id="Cmail"  placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                  <img src="feedback/speech-bubble.png" alt="feedback" id="feedback-icon">
+                  <label for="message">Your Feedback</label>
+                  <textarea type="message" rows="5" cols="30" id="Cfeedback"   placeholder="Your feedbacks" required></textarea>
+              </div>
+              <div class="form-group" id="starRate">
+                <img src="feedback/5-star.png" alt="" id="stars"><br><br>
+                  <input type="radio" class="star" name="star1" value="">
+                  <input type="radio" class="star" name="star2" value="">
+                  <input type="radio" class="star" name="star3" value="">
+                  <input type="radio" class="star" name="star4" value="">
+                  <input type="radio" class="star" name="star5" value="">
+                   <label for="star"></label><br>
+              </div>
+              <button type="button" onclick="myFunction();" >SEND FEEDBACK</button>
+          
+          </form>
+            </div>
+            <div class="fcolumn">
+                <div class="fcards">
+                    <div class="outer">
+                      <div class="fcard" style="--delay: -1;">
+                        <div class="header">
+                          <div class="profile">
+                            <div class="img">
+                              <img
+                                src="feedback/jackson wang.jpg" alt=""/>
+                            </div>
+                            <div class="details">
+                              <h4>Alex Jintou</h4>
+                              <p>Alexxx@gmail.com</p>
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <img src="feedback/rating.png" alt="stars"/>
+                          </div>
+                        </div>
+                        <div class="testimonial">
+                          <p>
+                            Yummy!
+                            Amazing services and cake! 
+                            Packaging was super neat and cakes are very uniquely flavoured.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="fcard" style="--delay: 0;">
+                        <div class="header">
+                          <div class="profile">
+                            <div class="img">
+                              <img src="feedback/girl.jpg" alt="girl"/>
+                            </div>
+                            <div class="details">
+                              <h4>RSF Dashen</h4>
+                              <p>dashen@gmail.com</p>
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <img src="feedback/rating.png" alt="stars"/>
+                          </div>
+                        </div>
+                        <div class="testimonial">
+                          <p>
+                            What I can share is the cake and macaroon is great not too sweet but it’s 
+                            just nice even elderly people can get to enjoy it too. 
+                            The service is great and have a fast response. 
+                            Definitely worth going back for more cake/macaroons🤤
+                          </p>
+                        </div>
+                      </div>
+                      <div class="fcard" style="--delay: 1;">
+                        <div class="header">
+                          <div class="profile">
+                            <div class="img">
+                              <img
+                                src="feedback/iu.jpg"
+                                alt="iu"
+                              />
+                            </div>
+                            <div class="details">
+                              <h4>Iu UwU</h4>
+                              <p>iu@yahoo.com</p>
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <img src="feedback/rating1.png" alt="stars"/>
+                          </div>
+                        </div>
+                        <div class="testimonial">
+                          <p>
+                            Was looking to surprise my sister with a cake for her birthday days ago and Le Crépuscule came highly recommended by my nephew. 
+                            It was easy to place order online and cake was delivered on time.
+                            My sister loved the white chocolate cake a lot.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="fcard" style="--delay: 2;">
+                        <div class="header">
+                          <div class="profile">
+                            <div class="img">
+                              <img
+                                src="feedback/wangyibo.jpg" alt="wangyibo"/>
+                            </div>
+                            <div class="details">
+                              <h4>Kai Lee</h4>
+                              <p>Kailee@gmail.com</p>
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <img src="feedback/rating.png" alt="stars"/>
+                          </div>
+                        </div>
+                        <div class="testimonial">
+                          <p>
+                            Thank you for your good services.🥰
+                            We are very satisfied on the service and products received. 
+                            Neat and beautiful packaging. The macaroon has never look this delicious! 
+                            We will definitely become your regular customer!
+                          </p>
+                        </div>
+                      </div>
+                      <div class="fcard" style="--delay: 2;">
+                        <div class="header">
+                          <div class="profile">
+                            <div class="img">
+                              <img
+                                src="feedback/bear.jpg" alt="bear"/>
+                            </div>
+                            <div class="details">
+                              <h4>Wilson boss</h4>
+                              <p>wilsonboss@gmail.com</p>
+                            </div>
+                          </div>
+                          <div class="stars">
+                            <img src="feedback/rating.png" alt="stars"/>
+                          </div>
+                        </div>
+                        <div class="testimonial">
+                          <p>
+                            My dad got macaroons from this place for me on my birthday and I have to say, 
+                            they taste absolutely amazing! 
+                            The flavours are so unique and the texture is just perfect. 
+                            If you are looking for a go to snack or dessert, 
+                            this is definitely the place to go to.❤️ 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+    <script>
+      function myFunction(){
+        var name = document.getElementById("Cname").value;
+        var phone = document.getElementById("Cphone").value;
+        var mail= document.getElementById("Cmail").value;
+        var feedback= document.getElementById("Cfeedback").value;
+
+        if (name.length == 0 || phone.length == 0 || mail.length == 0|| feedback.length ==0){
+            alert("Empty field is not allowed.")
+        }
+        else {
+            alert("Enter completely")
+            return location.replace("/home.html");
+        }
+      }
+    </script>
+  
+</body>
+</html>
