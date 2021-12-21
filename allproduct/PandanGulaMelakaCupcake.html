@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandan Gula Melaka Cupcake</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="icon" href="../allproductIMG/logo.jpeg"/>
+</head>
+<!-- Display the tag with id 'open' in default when page load -->
+<body onload="document.getElementById('open').click();document.getElementById('openImg').click();"> 
+    <header>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../allproduct.html">Product</a></li>
+                <li><a href="../promotion.html">Promotion</a></li>
+                <li><a href="../FAQ.html">FAQ</a></li>
+                <li><a href="../aboutus.html">About Us</a></li>
+                <li><a href="../contactus.html">Contact Us</a></li>
+                <li id="userlogin"><a href="../membership.html"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="gallery">
+        <div class="container">
+                <img id="expandedImg" style="width:100%">
+        </div>
+        <div class="productGallery">
+            <div class="productImage">
+                <img src="../allproductIMG/cupcake4.png" alt="Pandan Gula Melaka Cupcake" onclick="clickit(this);" id="openImg">
+            </div>
+            <div class="productImage">
+                <img src="../allproductIMG/cupcake4i.png" alt="Pandan Gula Melaka Cupcake2" onclick="clickit(this);">
+            </div>
+        </div>
+    </div>
+    
+    
+   
+   <div class="productDescription">
+       <h1 class="shop-item-title">Pandan Gula Melaka Cupcake</h1>
+       <h2 class="shop-item-price">RM20.00</h2>
+       <p>(Tax included.Shipping calculated at checkout)</p>
+       <h3>*Contains 12 cupcakes each box</h3>
+       <br>
+       <hr>
+       <br>
+       <div>
+           <h3>Quantity:</h3>
+           <div id="qtyButton">
+               <button type="submit" onclick="plus(-1)">-</button>
+               <input type="text" name="quantity" id="Qty" min="1" value="1">
+               <button type="submit" onclick="plus(1)">+</button>
+           </div>
+       </div>
+       <br> <br>
+       <div id="addCartButton">
+        <button type="submit" id="addcartBtn">Add to Cart</button>
+       </div>
+    </div>
+    <div class="information">
+        <p class="infotitle" onclick="openTitle('Description',this)" id="open">Description</button>
+        <p class="infotitle" onclick="openTitle('Store',this)">Serving and Storage</button>
+
+        <div id="Description" class="infocontent">
+            <h2>Pandan Gula Melaka Cupcake</h2>
+           <p>Happiness is only a cupcake away. This Locale Cupcakes (Pandan Gula Melaka) is the 
+            solution for everything! Made with fresh pandan and coconut milk, this dessert will get 
+            you hooked from the first bite.Choose a box of 12 which can be served as a quick bite when you are 
+            having a mini gathering with your friends or served as a sweet treat in any occasion.</p>
+        </div>
+        <div id="Store" class="infocontent">
+            <ul>
+                <li>Keep refrigerated (0 - 4°C) for at least 30 minutes upon receiving. <i>(DO NOT FREEZE)</i></li>
+                <li>Avoid direct sunlight or humid environment.</li>
+                <li>Best serving temperature: 10°C - 12°C; Take the cake out from the fridge shortly before serving</li>
+                <li>Best consumed within 2 days, however the cake can last in the chiller up to 4 days</li>
+            </ul>
+        </div>
+    </div>
+    <div class="relatedproduct">
+        <h1>Related Product</h1>
+        <div class="productImg">
+            <a href="SaltedCaramelChocolateCupcake.html"><img src="../allproductIMG/cupcake2.png" alt="Salted Caramel Chocolate Cupcake"></a>
+            <p>Salted Caramel Chocolate Cupcake<br><i>RM25.00</i></p>
+        </div>
+        <div class="productImg">
+            <a href="ButterscotchCookiesCupcake.html"><img src="../allproductIMG/cupcake5.png" alt="Butterscotch Cookies Cupcake"></a>
+            <p>Butterscotch Cookies Cupcake<br><i>RM20.00</i></p>
+        </div>
+        <div class="productImg">
+            <a href="VanilaCupcake.html"><img src="../allproductIMG/cupcake1.png" alt="Vanila Cupcake"></a>
+            <p>Vanila Cupcake<br><i>RM20.00</i></p>
+        </div>
+    </div>
+                      <!-- Trigger/Open The Modal -->
+                      <div class="cart_btn_area">
+                        <span id="cartNum"></span>
+                        <button id="cartBtn" title="Cart">
+                            <img src="../icons/cart.png" alt="cart_icon" class="cart_icon" >
+                        </button>
+                    </div>
+            
+                    <!-- The Modal -->
+                    <div id="cartModal" class="cart-modal">
+                        <!-- Modal content -->
+                        <div class="cart-modal-content">
+                            <div class="cart-modal-header">
+                                <span class="cart-close">&times;</span>
+                                <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Cart</h2>
+                            </div>
+                            <div class="cart-modal-body">
+                                <table class="cart-table_modal" >
+                                    <thead>
+                                        <tr>
+                                            <td id="cart-img-lbl" class="cart_lbl_img">Product</td>
+                                            <td id="cart-title-lbl" class="cart_lbl_title">Name</td>
+                                            <td id="cart-price-lbl" class="cart_lbl_price">Price</td>
+                                            <td id="cart-qty-lbl" class="cart_lbl_qty">Quantity</td>
+                                            <td id="cart-ttl-lbl" class="cart_lbl_ttl">Total</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cart-table_modal">
+        
+                                    </tbody>
+                                    
+                                    <!-- <tr id="cart-content">
+                                    </tr> -->
+                                </table>
+                                <div id="price">
+        
+                                </div>
+                                <button id="checkout_btn" onclick="ckcout()">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+        
+                    <!-- The Modal -->
+                    <div id="chatModal" class="chat_modal">
+                        <!-- Modal content -->
+                        <div class="chat-modal-content">
+                            <div class="chat-modal-header">
+                                <span class="chat-close">&times;</span>
+                                <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Live Chat</h2>
+                            </div>
+                            <div class="chat-modal-body">
+        
+                                <div class="staff">
+                                    <img src="../icons/support.png" alt="support_icon" id="support-icon">
+                                    <p id="firstmsg" class="first-msg" style="padding-bottom: 5%;">Hello! How can I help you?</p>
+                                </div>
+                                <div class="choose-section">
+                                    <table class="ques-table">
+                                        <tr>
+                                            <div class="arrow"></div>
+                                            <td rowspan="5"><h4>Choose Your Question: </h4></td>
+        
+                                            <td class="op"><button id="del-fee" onclick="del_fee()">Delivery Fees</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="op"><button id="op-time" onclick="op_time()">Operation Time</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="op"><button id="pay-met" onclick="pay_met()">Payment Method</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="op"><button id="abt-pro" onclick="abt_pro()">About Product</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="customer">
+                                    <img src="../icons/customer.png" alt="customer_icon" id="customer-icon">
+                                    <div class="ask">
+        
+                                        <p id="ask-msg" class="ask_msg">Ask your questions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                <!--list menu holder-->
+                <div class="abc">
+                    <button id="chatBtn" title="live chat">
+                        <img src="../icons/live-chat.png" alt="chat_icon" class="chat_icon" >
+                    </button>
+                    <button id="fdbtn" title="feedback"> 
+                        <a href="../feedback.html">
+                            <img src="../icons/feedback.png" alt="feedback" class="feedback">
+                        </a>
+                    </button>
+                </div>
+    <button onclick="gototopFunction()" id="gototopBtn"><img src="../icons/uparrow.png" alt="Go to top icon"></button>
+       
+    <footer>
+        <div class="container">
+            <div class="column1">
+                <h3>Main Menu</h3>
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../allproduct.html">Product</a></li>
+                    <li><a href="../promotion.html">Promotion</a></li>
+                    <li><a href="../contactus.html">Contact Us</a></li>
+                    <li><a href="../aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="column2">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="../contactus.html">Contact Us</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h3>Store Policies</h3>
+                <ul>
+                    <li><a href="../t&c.html">Term & Conditions</a></li>
+                    <li><a href="../privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="column4">
+                <h3>Subscribe Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100068219180558"><img src="../footer/facebook_footer.png" alt="Facebook"></a></li>
+                    <li><a href="https://instagram.com/le_crepuscule_france?utm_medium=copy_link"><img src="../footer/instagram_footer.png" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com/LeCrepuscule_?s=08"><img src="../footer/twitter_footer.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <div class="name_footer">
+                <h2>Le Crépuscule Dessert Shop</h2>
+                <p><img src="../footer/phone_footer.png" alt="telephone">&nbsp;<a href="tel:+01110715933">01110-715933</a></p>
+                <p><img src="../footer/email_footer.png" alt="email">&nbsp;<a href="mailto:lecrepuscule1@gmail.com">lecrepuscule1@gmail.com</a></p>
+            </div>
+
+        </div>
+        <div class="row2">
+            <p>Copyright &copy; Le Crépuscule Dessert Shop </p>
+        </div>
+    </footer>
+    <script src="../function.js"></script>
+    <script src="../cart.js"></script>
+    <script src="../order.js"></script>
+    <script src="../livechat.js"></script>
+    <script src="../membership.js"></script>
+
+</body>
+</html>
