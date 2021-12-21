@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Le Crépuscule Dessert Shop</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="allproductIMG/logo.jpeg"/>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <img src="allproductIMG/logo.jpeg" alt="logo">
+            </div>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="allproduct.html">Product</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li id="userlogin"><a href="membership.html"></a></li>
+                </ul>
+            </nav>
+
+                  
+        </header>
+        <div class="navproduct">
+            <img src="allproductIMG/navproduct1.png" alt="product image" class="myimage">
+            <img src="allproductIMG/navproduct2.png" alt="product image" class="myimage">
+            <img src="allproductIMG/navproduct3.png" alt="product image" class="myimage">
+        </div>
+        <div class="intro">
+            <h2>Birthday, Anniversary, Party, Farewell, Celebration...</h2>
+            <p>Impress your guests with a delectable dessert that everyone will remember</p>
+            <h1>Whole cakes</h1>
+        </div>
+        <form class="searchproduct" onsubmit="return false">
+            <input type="text" id="searchbar" name="search" placeholder="Search...">
+            <button id="searchbtn" onclick="searchproduct()"><img src="allproductIMG/search.png" alt=""></button> 
+        </form>
+       <div class="productlist">
+           <div class="cakelist">
+               <img src="allproductIMG/cake1.png" class="image" alt="Hazelnut Praline Cake">
+               <a href="allproduct/HazelnutPralineCake.html">
+                <div class="cakeText">
+                    <p style="padding-top: 25%;">Hazelnut Praline Cake<br><i>RM98.00</i></p>
+                </div>
+                </a>
+           </div>
+           <div class="cakelist">
+               <img src="allproductIMG/cake2.png" class="image" alt="Carrot Cake">
+               <a href="allproduct/CarrotCake.html">
+                <div class="cakeText">
+                    <p>Carrot Cake<br><i>RM80.00</i></p>
+                 </div>
+                </a>
+               
+           </div>
+           <div class="cakelist">
+               <img src="allproductIMG/cake3.png" class="image" alt="White Chocolate Cake">
+               <a href="allproduct/WhiteChocolateCake.html">
+                <div class="cakeText">
+                    <p style="padding-top: 25%;">White Chocolate Cake<br><i>RM150.00</i></p>
+                 </div>
+                </a>
+           </div>
+           <div class="cakelist">
+               <img src="allproductIMG/cake4.png" class="image" alt="Raspberry Chocolate Mousse Cake">
+               <a href="allproduct/RaspberryChocolateMousseCake.html">
+                <div class="cakeText">
+                    <p style="padding-top: 20%;">Raspberry Chocolate Mousse Cake<br><i>RM120.00</i></p>
+                 </div>
+                </a> 
+           </div>
+           <div class="cakelist">
+               <img src="allproductIMG/cake5.png" class="image" alt="Classic Tiramisu Cake">
+               <a href="allproduct/ClassicTiramisuCake.html">
+                <div class="cakeText">
+                    <p style="padding-top: 25%;">Classic Tiramisu Cake<br><i>RM80.00</i></p>
+                 </div>
+                </a>
+            </div>
+           <div class="cakelist">
+                <img src="allproductIMG/cake6.png" class="image" alt="Classic Strawberry Cake">
+                <a href="allproduct/ClassicStrawberryCake.html">
+                    <div class="cakeText">
+                        <p style="padding-top: 25%;">Classic Strawberry Cake<br><i>RM78.00</i></p>
+                     </div>
+                    </a>
+           </div>
+           <div class="cakelist">
+                <img src="allproductIMG/cake7.png" class="image" alt="Ferrero Roche Cake">
+                <a href="allproduct/FerreroRocheCake.html">
+                    <div class="cakeText">
+                        <p>Ferrero Roche Cake<br><i>RM135.00</i></p>
+                     </div>
+                </a> 
+            </div>  
+            <div class="cakelist">
+                <img src="allproductIMG/cake8.png" class="image" alt="Lotus Biscoff Cheese Cake">
+                <a href="allproduct/LotusBiscoffCheeseCake.html">
+                    <div class="cakeText">
+                        <p style="padding-top: 25%;">Lotus Biscoff Cheese Cake<br><i>RM110.00</i></p>
+                     </div>
+                </a>
+            </div>   
+            <div class="cakelist">
+                <img src="allproductIMG/cake9.png" class="image" alt="Mocha Cake">
+                <a href="allproduct/MochaCake.html">
+                    <div class="cakeText">
+                        <p>Mocha Cake<br><i>RM105.00</i></p>
+                     </div>
+                </a>
+            </div> 
+            <div class="cakelist">
+                <img src="allproductIMG/cake10.png" class="image" alt="Mister Bean Cake">
+                <a href="allproduct/MisterBeanCake.html">
+                    <div class="cakeText">
+                        <p>Mister Bean Cake<br><i>RM120.00</i></p>
+                     </div>
+                </a>
+                
+            </div> 
+            <div class="cakelist">
+                <img src="allproductIMG/cake11.png" class="image" alt="Lemon Poppyseed Cake">
+                <a href="allproduct/LemonPoppyseedCake.html">
+                    <div class="cakeText">
+                        <p style="padding-top: 25%;">Lemon Poppyseed Cake<br><i>RM95.00</i></p>
+                     </div>
+                </a>
+                
+            </div> 
+            <div class="cakelist">
+                <img src="allproductIMG/cake12.png" class="image" alt="Chunky Peanut Cheese Cake">
+                <a href="allproduct/ChunkyPeanutCheeseCake.html">
+                    <div class="cakeText">
+                        <p style="padding-top: 25%;">Chunky Peanut Cheese Cake<br><i>RM135.00</i></p>
+                     </div>
+                </a>
+            </div> 
+            <div id="noresult">
+                No results found ......
+            </div>
+       </div>
+       <div class="background">
+           <div class="backgroundtext">
+               <p>A party without <span>cake</span> is just a meeting</p>
+           </div>
+       </div>
+       <div class="intro MacaronsSection">
+           <h2>Send some love anywhere in perth</h2>
+           <p>Not only cakes, we've also made desserts to you. You can send to a loved one. We promise they will like it!</p>
+           <h1>Macarons</h1>
+       </div>
+       <div class="macaronsDiv" id="macaronsDiv">
+           <div id="upImg" class="MacaronsImg" onmouseout="showMacaronsTitle()" onmouseover="showMacaronsDetails('12 pcs/BOX RM60')">
+            <a href="allproduct/Macarons12pcs.html"> <img src="allproductIMG/Macarons1.png" alt="12 pieces/box Macarons" ></a>  
+           </div>
+           <div id="leftImg" class="MacaronsImg" onmouseout="showMacaronsTitle()" onmouseover="showMacaronsDetails('18 pcs/TOWER RM110')">
+               <a href="allproduct/Macarons18pcs.html"><img src="allproductIMG/Macarons18pcs1.png" alt="18 pieces/tower Macarons" ></a>
+           </div>
+           <div id="rightImg" class="MacaronsImg" onmouseout="showMacaronsTitle()" onmouseover="showMacaronsDetails('25 pcs/TOWER RM150')">
+                <a href="allproduct/Macarons25pcs.html"><img src="allproductIMG/Macarons25pcs1.png" alt="25 pieces/tower Macarons" ></a>
+           </div>
+           <div id="downImg" class="MacaronsImg" onmouseout="showMacaronsTitle()" onmouseover="showMacaronsDetails('50 pcs/TOWER RM250')">
+               <a href="allproduct/Macarons50pcs.html"><img src="allproductIMG/Macarons50pcs1.png" alt="50 pieces/tower Macarons" ></a>
+           </div>
+           <div id="MacaronDescrit">
+               <p>Macarons</p>
+           </div>
+       </div>        
+        <div class="navproduct" style="margin-top: 100px;">
+            <img src="allproductIMG/navproduct5.jpg" alt="navproduct5">
+        </div>
+
+        <div class="intro" id="cupcakediv">
+            <h2>“A cupcake a day, keeps the tummy rumbles away.”</h2>
+            <h1>Cupcake</h1>
+        </div>
+
+        <div class="productlist cupcakediv" >
+            <div class="cupcakelist">
+                <img src="allproductIMG/cupcake1.png" alt="Vanila Cupcake">
+                <a href="allproduct/VanilaCupcake.html">
+                    <div class="cupcakeText">
+                        <p>Vanila Cupcake<br>RM20.00</p>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="cupcakelist">
+                <img src="allproductIMG/cupcake2.png" alt="Salted Caramel Chocolate Cupcake">
+                <a href="allproduct/SaltedCaramelChocolateCupcake.html">
+                    <div class="cupcakeText">
+                        <p>Salted Caramel Chocolate Cupcake<br>RM25.00</p>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="cupcakelist">
+                <img src="allproductIMG/cupcake3.png" alt="Chocolate Cupcake">
+                <a href="allproduct/ChocolateCupcake.html">
+                    <div class="cupcakeText">
+                        <p>Chocolate Cupcake<br>RM20.00</p>
+                    </div>
+                </a>
+                
+            </div>
+            <div id="row2">
+                <div class="cupcakelist2">
+                    <img src="allproductIMG/cupcake4.png" alt="Pandan Gula Melaka Cupcake">
+                    <a href="allproduct/PandanGulaMelakaCupcake.html">
+                        <div class="cupcakeText">
+                            <p>Pandan Gula Melaka Cupcake<br>RM20.00</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cupcakelist2">
+                    <img src="allproductIMG/cupcake5.png" alt="Butterscotch Cookies Cupcake">
+                    <a href="allproduct/ButterscotchCookiesCupcake.html">
+                        <div class="cupcakeText">
+                            <p>Butterscotch Cookies Cupcake<br>RM20.00</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+                <!-- Trigger/Open The Modal -->
+                <div class="cart_btn_area">
+                    <span id="cartNum"></span>
+                    <button id="cartBtn" title="Cart">
+                        <img src="icons/cart.png" alt="cart_icon" class="cart_icon" >
+                    </button>
+                </div>
+        
+                <!-- The Modal -->
+                <div id="cartModal" class="cart-modal">
+                    <!-- Modal content -->
+                    <div class="cart-modal-content">
+                        <div class="cart-modal-header">
+                            <span class="cart-close">&times;</span>
+                            <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Cart</h2>
+                        </div>
+                        <div class="cart-modal-body">
+                            <table class="cart-table_modal" >
+                                <thead>
+                                    <tr>
+                                        <td id="cart-img-lbl" class="cart_lbl_img">Product</td>
+                                        <td id="cart-title-lbl" class="cart_lbl_title">Name</td>
+                                        <td id="cart-price-lbl" class="cart_lbl_price">Price</td>
+                                        <td id="cart-qty-lbl" class="cart_lbl_qty">Quantity</td>
+                                        <td id="cart-ttl-lbl" class="cart_lbl_ttl">Total</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-table_modal">
+    
+                                </tbody>
+                                
+                                <!-- <tr id="cart-content">
+                                </tr> -->
+                            </table>
+                            <div id="price">
+    
+                            </div>
+                            <button id="checkout_btn" onclick="ckcout()">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+                <!-- The Modal -->
+                <div id="chatModal" class="chat_modal">
+                    <!-- Modal content -->
+                    <div class="chat-modal-content">
+                        <div class="chat-modal-header">
+                            <span class="chat-close">&times;</span>
+                            <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Live Chat</h2>
+                        </div>
+                        <div class="chat-modal-body">
+    
+                            <div class="staff">
+                                <img src="icons/support.png" alt="support_icon" id="support-icon">
+                                <p id="firstmsg" class="first-msg" style="padding-bottom: 5%;">Hello! How can I help you?</p>
+                            </div>
+                            <div class="choose-section">
+                                <table class="ques-table">
+                                    <tr>
+                                        <div class="arrow"></div>
+                                        <td rowspan="5"><h4>Choose Your Question: </h4></td>
+    
+                                        <td class="op"><button id="del-fee" onclick="del_fee()">Delivery Fees</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="op"><button id="op-time" onclick="op_time()">Operation Time</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="op"><button id="pay-met" onclick="pay_met()">Payment Method</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="op"><button id="abt-pro" onclick="abt_pro()">About Product</button></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="customer">
+                                <img src="icons/customer.png" alt="customer_icon" id="customer-icon">
+                                <div class="ask">
+    
+                                    <p id="ask-msg" class="ask_msg">Ask your questions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            <!--list menu holder-->
+            <div class="abc">
+                <button id="chatBtn" title="live chat">
+                    <img src="icons/live-chat.png" alt="chat_icon" class="chat_icon" >
+                </button>
+                <button id="fdbtn" title="feedback"> 
+                    <a href="feedback.html">
+                        <img src="icons/feedback.png" alt="feedback" class="feedback">
+                    </a>
+                </button>
+            </div>
+
+        <button onclick="gototopFunction()" id="gototopBtn"><img src="icons/uparrow.png" alt="Go to top icon"></button>
+        
+        <footer>
+            <div class="container">
+                <div class="column1">
+                    <h3>Main Menu</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="allproduct.html">Product</a></li>
+                        <li><a href="promotion.html">Promotion</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="column3">
+                    <h3>Store Policies</h3>
+                    <ul>
+                        <li><a href="t&c.html">Term & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="column4">
+                    <h3>Subscribe Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100068219180558"><img src="footer/facebook_footer.png" alt="Facebook"></a></li>
+                        <li><a href="https://instagram.com/le_crepuscule_france?utm_medium=copy_link"><img src="footer/instagram_footer.png" alt="Instagram"></a></li>
+                        <li><a href="https://twitter.com/LeCrepuscule_?s=08"><img src="footer/twitter_footer.png" alt="Twitter"></a></li>
+                    </ul>
+                </div>
+                <div class="name_footer">
+                    <h2>Le Crépuscule Dessert Shop</h2>
+                    <p><img src="footer/phone_footer.png" alt="telephone">&nbsp;<a href="tel:+01110715933">01110-715933</a></p>
+                    <p><img src="footer/email_footer.png" alt="email">&nbsp;<a href="mailto:lecrepuscule1@gmail.com">lecrepuscule1@gmail.com</a></p>
+                </div>
+
+            </div>
+            <div class="row2">
+                <p>Copyright &copy; Le Crépuscule Dessert Shop </p>
+            </div>
+        </footer>
+
+        <script src="function.js"></script>
+        <script src="order.js"></script>
+        <script src="livechat.js"></script>
+        <script src="membership.js"></script>
+        <script src="cart.js"></script>
+        <script>
+
+            //-----sticky navigation------------------------
+            const nav = document.querySelector('#navbar');//return the first element in the document with class = "#navbar"
+            let navTop = nav.offsetTop;//returns the top position (in pixels) relative to the top of the offsetParent element.
+
+            function fixedNav() {
+                var currentScrollPos = window.pageYOffset;
+
+                if (window.scrollY >= navTop) {    
+                    nav.classList.add('sticky');
+
+                } 
+                else{
+                    nav.classList.remove('sticky'); 
+                }
+                                
+            }
+
+            window.addEventListener('scroll', fixedNav);
+
+            //Slideshow at homepage macaron
+            var counter=1;
+            setInterval(function(){
+                // The button with checked, will display the image accordingly
+                document.getElementById('radio'+ counter).checked=true;
+                counter++;
+                // If counter count until 4, and there is no 4th img
+                // Then, counter reset to 1 to perform a loop of img
+                if(counter>3){
+                    counter = 1
+                }
+            },3000); //Each image display with 3 seconds
+        </script>
+    </body>
+</html>
+

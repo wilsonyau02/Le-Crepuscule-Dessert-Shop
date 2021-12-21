@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" href="allproductIMG/logo.jpeg"/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Arimo');
+</style>
+<body>
+    <div class="checkout_label">
+        <h1>
+            <img src="icons/cashier.png" alt="cashier" id="cashier">
+            Checkout
+        </h1>
+    </div>
+<div id="checkout_container">
+    <div id="delivery_container">
+        <h2>Delivery Address</h2>
+
+        <div id="deliveryForm">
+            <form id="deliveryM" name="deliveryM">
+
+                <div class="delivery_input one">
+                    <div id="nameD_icon" class="formD_icon"></div>
+                    <div>
+                        <h5>Name</h5>
+                        <input type="text" name="nameD" id="nameD" class="Dinput" onfocus="placeholder='Your Name'" onblur="placeholder=''" autocomplete="off" required>   
+                    </div>
+                </div>
+
+                <div class="delivery_input">
+                    <div id="emailD_icon" class="formD_icon"></div>
+                    <div>
+                        <h5>Email</h5>
+                        <input type="email" name="emailD" id="emailD" class="Dinput" onfocus="placeholder='lecrepuscule@gmail.com'" onblur="placeholder=''" autocomplete="off" required/>    
+                    </div>
+                </div>
+
+                <div class="delivery_input">
+                    <div id="phoneD_icon" class="formD_icon"></div>
+                    <div>
+                        <h5>Phone Number</h5>
+                        <input type="tel" name="phoneD" id="phoneD" class="Dinput" onfocus=" placeholder='012-3456789'" onblur="placeholder=''" autocomplete="off" required/>
+                    </div>
+                </div>
+                <div class="delivery_input" id="addressD_input">
+                    <div id="addressD_icon" class="formD_icon">
+                    </div>
+                    <div>
+                        <h5>Address</h5>
+                        <input type="text" name="addressD" id="addressD" class="Dinput" onfocus="placeholder='Enter your street here...'" onblur="placeholder=''" autocomplete="off" required>   
+                    </div>
+                </div>
+                <div class="delivery_input" id="addressD_input">
+                    <div id="addressD_icon" class="formD_icon">
+                    </div>
+                    <div>
+                        <h5>Postcode</h5>
+                        <input type="text" name="postcodeD" id="postcodeD" class="Dinput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" onfocus="placeholder='Enter your postcode here...'" onblur="placeholder=''" autocomplete="off" required>   
+                    </div>
+                </div>
+                <div class="delivery_input" id="addressD_input">
+                    <div id="addressD_icon" class="formD_icon">
+                    </div>
+                    <div>
+                        <h5>City</h5>
+                        <input type="text" name="cityD" id="cityD" class="Dinput" onfocus="placeholder='Enter your city here...'" onblur="placeholder=''" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="delivery_input Ainput" id="addressD_input">
+                    <div id="areaD_icon" class="formD_icon"></div>
+                    <div>
+                        <h5>Kuala Lumpur, Malaysia</h5>
+                        <input type="text" name="addressD" id="addressD" class="Dinput" disabled>  
+                    </div>
+                </div>
+                <span>* We only serve for KL area.</span> 
+                
+                
+                <div>
+                    <button type="button" value="Submit" class="Dbutton" id="sendbtn" onclick="delivery()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="checkout_page">
+        <div class="cart-checkout">
+            <div id="cart-list">
+                <h3>Your order</h3>
+            </div>
+            <div id="cart-list-total">   
+            </div>        
+        </div>
+    </div>
+</div>
+
+                <!-- The Modal -->
+                <div id="paymentModal" class="payment-modal">
+                    <!-- Modal content -->
+                    <div class="payment-modal-content">
+                        <div class="payment-modal-header">
+                            <!-- <span class="cart-close">&times;</span> -->
+                            <h2>Payment Information</h2>
+                        </div>
+                        <div class="payment-modal-body">
+                            <form action="">
+                                <div class="cc-num">
+                                    <input type="image" src="icons/card1.png" alt="" style="width: 30px;">
+                                    <label for="card-num" id="card-num">Credit Card No.</label>
+                                    <br>
+                                    <input type="text" name="card-num" class='card-no-text' id="card-no-text" placeholder="4716108999716531">
+                                </div>
+                                <div class="cc-info">
+                                    <div>
+                                        <label for="card-num">Expiration Date</label>
+                                        <br>
+                                        <input type="month" value="2021" id="date-text" required>
+                                    </div>
+                                    <div class="ccv">
+                                        <label for="card-num">CCV</label>
+                                        <br>
+                                        <input type="text" name="ccv" id="ccv-text" placeholder="123">
+                                    </div>
+                                </div>
+                                <div class="payment-btn-field">
+                                    <button type="reset" value="Reset"  class="payment-btn">Reset</button>
+                                    <button type="button" value="Purchase" class="payment-btn" id="purchase-btn" onclick="success()">
+                                        Purchase
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+       
+                <footer>
+                    <div class="container">
+                        <div class="column1">
+                            <h3>Main Menu</h3>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="allproduct.html">Product</a></li>
+                                <li><a href="promotion.html">Promotion</a></li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="column2">
+                            <h3>Customer Service</h3>
+                            <ul>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="column3">
+                            <h3>Store Policies</h3>
+                            <ul>
+                                <li><a href="t&c.html">Term & Conditions</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="column4">
+                            <h3>Subscribe Us</h3>
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=100068219180558"><img src="footer/facebook_footer.png" alt="Facebook"></a></li>
+                                <li><a href="https://instagram.com/le_crepuscule_france?utm_medium=copy_link"><img src="footer/instagram_footer.png" alt="Instagram"></a></li>
+                                <li><a href="https://twitter.com/LeCrepuscule_?s=08"><img src="footer/twitter_footer.png" alt="Twitter"></a></li>
+                            </ul>
+                        </div>
+                        <div class="name_footer">
+                            <h2>Le Crépuscule Dessert Shop</h2>
+                            <p><img src="footer/phone_footer.png" alt="telephone">&nbsp;<a href="tel:+01110715933">01110-715933</a></p>
+                            <p><img src="footer/email_footer.png" alt="email">&nbsp;<a href="mailto:lecrepuscule1@gmail.com">lecrepuscule1@gmail.com</a></p>
+                        </div>
+        
+                    </div>
+                    <div class="row2">
+                        <p>Copyright &copy; Le Crépuscule Dessert Shop </p>
+                    </div>
+                </footer>
+
+<script src="checkout.js"></script>
+<script src="delivery.js"></script>
+</body>
+</html>

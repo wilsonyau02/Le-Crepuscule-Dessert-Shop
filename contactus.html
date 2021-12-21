@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Le Crépuscule Dessert Shop</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="allproductIMG/logo.jpeg"/>
+        <!-- <script src="function.js"></script> -->
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body onload="checkstatus()">
+        <header>
+            <div id="logo">
+                <img src="allproductIMG/logo.jpeg" alt="logo">
+            </div>
+            
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="allproduct.html">Product</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li id="userlogin"><a href="membership.html"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="contact_info">
+            <table id="cinformation">
+                <tr>
+                    <th colspan="2"><h3>Le Crépuscule Dessert Shop</h3></th>
+                </tr>
+                <tr>
+                    <td class="cicon">
+                        <img src="contactus/cemail.png" alt="contact email">
+                        <p>E-mail</p>
+                    </td>
+                    <td class="cinfo">lecrepuscule1@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="cicon">
+                        <img src="contactus/cphone.png" alt="contact phone">
+                        <p>Phone</p>
+                    </td>
+                    <td class="cinfo">01110-715933</td>
+                </tr>
+                <tr>
+                    <td class="cicon">
+                        <img src="contactus/clocation.png" alt="contact address">
+                        <p>Address</p>
+                    </td>
+                    <td class="cinfo">123, Jalan Rimbunan Raya 1, Laman Rimbunan, 52100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contactus_container">
+            <div id="contactus">
+                <div id="contact_desc">
+                    <p id="firstdesc">Have a <span>question</span> before you order? </p>
+                    <span id="contspan"></span>
+                    <p id="seconddesc">Send us a message and we will get back to you soon.</p>
+                </div>
+                
+                <div id="contact_form" name="contact_form">
+                    <div id="contact_title"><h2>Contact Us</h2></div>
+                        
+                    <form id="contactform" name="contactform">
+                        <div class="contact_input">
+                            <input type="text" name="name" id="name" class="cinput" autocomplete="off" required onfocus="placeholder='Enter Your Name Here'" onblur="placeholder=''"/>
+                            <label for="name">Name</label>
+                            <span>Name</span>
+                        </div>
+                        <div class="contact_input">
+                            <input type="email" name="email" id="email" class="cinput" autocomplete="off" required onfocus="placeholder='lecrepuscule@gmail.com'" onblur="placeholder=''"/>
+                            <label for="email">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="contact_input">
+                            <input type="tel" name="phone" id="phone" class="cinput" autocomplete="off" required onfocus="placeholder='012-3456789'" onblur="placeholder=''"/>
+                            <label for="phone">Phone Number</label>
+                            <span>PhoneNumber</span>
+                        </div>
+                        <div class="contact_input contact_textarea">
+                            <textarea name="message" id="message" class="cinput" autocomplete="off" required onfocus="placeholder='Leave Your Question Here..'" onblur="placeholder=''"></textarea>
+                            <label for="message">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <div class="contact_input" >
+                            <!-- <input type="submit" value="Send" class="cbutton" id="cbutton" onclick="checkcontact()"> -->
+                            <button type="button" value="Send" class="cbutton" id="cbutton" onclick="checkcontact()">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Ask in meeting day -->
+            <div id="form_status" class="status"><p>We Received It! <br>Thank You <br> Have A Nice Day</p></div>
+        </div>
+
+        <div id="socialContact">
+            <h2>Social</h2>
+            <div id="contactFacebook">
+                <h2>Facebook</h2>
+                <div id="socialFacebook">
+                    <a href="#" class="facebook_img1">
+                        <img src="contactus/cfacebook.png" alt="facebook_cursor">
+                    </a>
+                    <a href="https://m.facebook.com/story.php?story_fbid=150254287258543&id=100068219180558" style="text-decoration: none;" target="_blank" class="facebook_img2">
+                        <img src="contactus/cfacebook.png" alt="facebook_cursor">
+                    </a>
+                    <a href="https://m.facebook.com/story.php?story_fbid=150258610591444&id=100068219180558" style="text-decoration: none;" target="_blank" class="facebook_img3">
+                        <img src="contactus/cfacebook.png" alt="facebook_cursor">
+                    </a>
+                    <a href="https://m.facebook.com/story.php?story_fbid=150254027258569&id=100068219180558" style="text-decoration: none;" target="_blank" class="facebook_img4">
+                        <img src="contactus/cfacebook.png" alt="facebook_cursor">
+                    </a>
+                </div>
+            </div>
+
+            <div id="contactInstagram">
+                <h2>Instagram</h2>
+                <div id="socialInstagram">
+                    <a href="https://www.instagram.com/p/CTjHo-7JbgB4benay0XhmpA37B0nepxJKvqRp80/?utm_medium=copy_link" style="text-decoration: none;" target="_blank" class="instagram_img1">
+                        <img src="contactus/cinstagram.png" alt="instagram_cursor">
+                    </a>
+                    <a href="#" class="instagram_img2">
+                        <img src="contactus/cinstagram.png" alt="instagram_cursor">
+                    </a>
+                    <a href="https://www.instagram.com/p/CTjHs7fJ21BTg2x0WF3ifpX0lD1GbXxy8Pyn4A0/?utm_medium=copy_link" style="text-decoration: none;" target="_blank" class="instagram_img3">
+                        <img src="contactus/cinstagram.png" alt="instagram_cursor">
+                    </a>
+                    <a href="https://www.instagram.com/p/CTjHxk5JR5w_yDVTk-uB9Wv6MqBifN8Wz0T-9Q0/?utm_medium=copy_link" style="text-decoration: none;" target="_blank" class="instagram_img4">
+                        <img src="contactus/cinstagram.png" alt="instagram_cursor">
+                    </a>
+                </div>
+            </div>
+
+            <div id="contactTwitter">
+                <h2>Twitter</h2>
+                <div id="socialTwitter">
+                    <a href="https://twitter.com/LeCrepuscule_/status/1438694801801576455?s=19" style="text-decoration: none;" target="_blank" class="twitter_img1">
+                        <img src="contactus/ctwitter.png" alt="twitter_cursor">
+                    </a>
+                    <a href="https://twitter.com/LeCrepuscule_/status/1438695371576786945?s=19" style="text-decoration: none;" target="_blank"  class="twitter_img2">
+                        <img src="contactus/ctwitter.png" alt="twitter_cursor">
+                    </a>
+                    <a href="#" style="text-decoration: none;" target="_blank" class="twitter_img3">
+                        <img src="contactus/ctwitter.png" alt="twitter_cursor">
+                    </a>
+                    <a href="https://twitter.com/LeCrepuscule_/status/1438695493794549762?s=19" style="text-decoration: none;" target="_blank" class="twitter_img4">
+                        <img src="contactus/ctwitter.png" alt="twitter_cursor">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+                            <!-- Trigger/Open The Modal -->
+                            <div class="cart_btn_area">
+                                <span id="cartNum"></span>
+                                <button id="cartBtn" title="Cart">
+                                    <img src="icons/cart.png" alt="cart_icon" class="cart_icon" >
+                                </button>
+                            </div>
+                    
+                            <!-- The Modal -->
+                            <div id="cartModal" class="cart-modal">
+                                <!-- Modal content -->
+                                <div class="cart-modal-content">
+                                    <div class="cart-modal-header">
+                                        <span class="cart-close">&times;</span>
+                                        <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Cart</h2>
+                                    </div>
+                                    <div class="cart-modal-body">
+                                        <table class="cart-table_modal" >
+                                            <thead>
+                                                <tr>
+                                                    <td id="cart-img-lbl" class="cart_lbl_img">Product</td>
+                                                    <td id="cart-title-lbl" class="cart_lbl_title">Name</td>
+                                                    <td id="cart-price-lbl" class="cart_lbl_price">Price</td>
+                                                    <td id="cart-qty-lbl" class="cart_lbl_qty">Quantity</td>
+                                                    <td id="cart-ttl-lbl" class="cart_lbl_ttl">Total</td>
+                                                    <td></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="cart-table_modal">
+                
+                                            </tbody>
+                                            
+                                            <!-- <tr id="cart-content">
+                                            </tr> -->
+                                        </table>
+                                        <div id="price">
+                
+                                        </div>
+                                        <button id="checkout_btn" onclick="ckcout()">Checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                
+                
+                            <!-- The Modal -->
+                            <div id="chatModal" class="chat_modal">
+                                <!-- Modal content -->
+                                <div class="chat-modal-content">
+                                    <div class="chat-modal-header">
+                                        <span class="chat-close">&times;</span>
+                                        <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Live Chat</h2>
+                                    </div>
+                                    <div class="chat-modal-body">
+                
+                                        <div class="staff">
+                                            <img src="icons/support.png" alt="support_icon" id="support-icon">
+                                            <p id="firstmsg" class="first-msg" style="padding-bottom: 5%;">Hello! How can I help you?</p>
+                                        </div>
+                                        <div class="choose-section">
+                                            <table class="ques-table">
+                                                <tr>
+                                                    <div class="arrow"></div>
+                                                    <td rowspan="5"><h4>Choose Your Question: </h4></td>
+                
+                                                    <td class="op"><button id="del-fee" onclick="del_fee()">Delivery Fees</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="op"><button id="op-time" onclick="op_time()">Operation Time</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="op"><button id="pay-met" onclick="pay_met()">Payment Method</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="op"><button id="abt-pro" onclick="abt_pro()">About Product</button></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="customer">
+                                            <img src="icons/customer.png" alt="customer_icon" id="customer-icon">
+                                            <div class="ask">
+                
+                                                <p id="ask-msg" class="ask_msg">Ask your questions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                
+                        <!--list menu holder-->
+                        <div class="abc">
+                            <button id="chatBtn" title="live chat">
+                                <img src="icons/live-chat.png" alt="chat_icon" class="chat_icon" >
+                            </button>
+                            <button id="fdbtn" title="feedback"> 
+                                <a href="feedback.html">
+                                    <img src="icons/feedback.png" alt="feedback" class="feedback">
+                                </a>
+                            </button>
+                        </div>
+            
+                    <button onclick="gototopFunction()" id="gototopBtn"><img src="icons/uparrow.png" alt="Go to top icon"></button>
+                    <footer>
+                        <div class="container">
+                            <div class="column1">
+                                <h3>Main Menu</h3>
+                                <ul>
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="allproduct.html">Product</a></li>
+                                    <li><a href="promotion.html">Promotion</a></li>
+                                    <li><a href="contactus.html">Contact Us</a></li>
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="column2">
+                                <h3>Customer Service</h3>
+                                <ul>
+                                    <li><a href="contactus.html">Contact Us</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="column3">
+                                <h3>Store Policies</h3>
+                                <ul>
+                                    <li><a href="t&c.html">Term & Conditions</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="column4">
+                                <h3>Subscribe Us</h3>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100068219180558"><img src="footer/facebook_footer.png" alt="Facebook"></a></li>
+                                    <li><a href="https://instagram.com/le_crepuscule_france?utm_medium=copy_link"><img src="footer/instagram_footer.png" alt="Instagram"></a></li>
+                                    <li><a href="https://twitter.com/LeCrepuscule_?s=08"><img src="footer/twitter_footer.png" alt="Twitter"></a></li>
+                                </ul>
+                            </div>
+                            <div class="name_footer">
+                                <h2>Le Crépuscule Dessert Shop</h2>
+                                <p><img src="footer/phone_footer.png" alt="telephone">&nbsp;<a href="tel:+01110715933">01110-715933</a></p>
+                                <p><img src="footer/email_footer.png" alt="email">&nbsp;<a href="mailto:lecrepuscule1@gmail.com">lecrepuscule1@gmail.com</a></p>
+                            </div>
+            
+                        </div>
+                        <div class="row2">
+                            <p>Copyright &copy; Le Crépuscule Dessert Shop </p>
+                        </div>
+                    </footer>
+        <script src="contact.js"></script>
+        <script src="membership.js"></script>
+        <script src="function.js"></script>
+        <script src="order.js"></script>
+        <script src="livechat.js"></script>
+        <script src="cart.js"></script>
+        <script>
+            //Go to top button function
+            //Get the button
+            var mybutton = document.getElementById("gototopBtn");
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+                mybutton.style.display = "block";
+            } 
+            else {
+                mybutton.style.display = "none";
+            }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function gototopFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+
+            //-----sticky navigation------------------------
+            const nav = document.querySelector('#navbar');//return the first element in the document with class = "#navbar"
+            let navTop = nav.offsetTop;//returns the top position (in pixels) relative to the top of the offsetParent element.
+
+            function fixedNav() {
+                var currentScrollPos = window.pageYOffset;
+
+                if (window.scrollY >= navTop) {    
+                    nav.classList.add('sticky');
+
+                } 
+                else{
+                    nav.classList.remove('sticky'); 
+                }
+                                
+            }
+
+            window.addEventListener('scroll', fixedNav);
+
+        
+        </script>
+    </body>
+</html>

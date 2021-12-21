@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="allproductIMG/logo.jpeg"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="allproduct.html">Product</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li id="userlogin"><a href="membership.html"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+              
+    </header>
+    <div class="membershipBg">
+        <div class="membershipForm">
+            <div class="optionButton">
+                <div id=optButton></div>
+                <button type="button" class="toggleBtn" id="loginBtn" onclick="showlogin()" style="color: white;">Log In</button>
+                <button type="button" class="toggleBtn" id="registerBtn" onclick="showregister()" style="color: black;">Register</button>
+            </div>
+            <form class="inputGroup" id="login">
+                <input type="text" name="LUsernameBox" id="LUsername" class="inputField" placeholder="Enter username" required>
+                <input type="password" name="LPasswordBox" id="LPassword" class="inputField" placeholder="Enter password" required >
+                <input type="checkbox" name="rememberPwdBox" class="tickBox" checked ><span>Remember my password</span>
+                <button type="button" class="submitBtn" onclick="login()">Login</button>
+            </form>
+            <form class="inputGroup" id="register">
+                <input type="text" name="RUsernameBox" id="RUsername" class="inputField" placeholder="Enter username" required>
+                <input type="email" name="REmailBox" id="Remail" class="inputField" placeholder="Enter e-mail" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="password" name="RPasswordBox" id="RPassword" class="inputField" placeholder="Enter password" required>
+                <input type="password" name="RCPasswordBox" id="RCPassword" class="inputField" placeholder="Confirm password" required>
+                <input type="checkbox" name="TNCbox" class="tickBox"checked ><span>*Agree to the terms and condition</span>
+                <button type="button" class="submitBtn" onclick="register()">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <footer style="margin-top: 0;padding-top: 0;">
+        <div class="container">
+            <div class="column1">
+                <h3>Main Menu</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="allproduct.html">Product</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="column2">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h3>Store Policies</h3>
+                <ul>
+                    <li><a href="t&c.html">Term & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="column4">
+                <h3>Subscribe Us</h3>
+                <ul>
+                    <li><a href="#"><img src="footer/facebook_footer.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="footer/instagram_footer.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="footer/twitter_footer.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <div class="name_footer">
+                <h2>Le Crépuscule Dessert Shop</h2>
+                <p><img src="footer/phone_footer.png" alt="telephone">&nbsp;<a href="tel:+0123456789">012-34567889</a></p>
+                <p><img src="footer/email_footer.png" alt="email">&nbsp;<a href="mailto:lecrepuscule1@gmail.com">lecrepuscule@gmail.com</a></p>
+            </div>
+
+        </div>
+        <div class="row2">
+            <p>Copyright &copy; Le Crépuscule Dessert Shop </p>
+        </div>
+    </footer>
+    <script src="membership.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>
