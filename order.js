@@ -184,7 +184,7 @@ function ckcout(){
         alert("No item in cart.")
     }
     else{
-        location.href='/LeCrepusculeDessertShop-Assignment/checkout.html';
+        location.href='/checkout.html';
     }
 
 }
