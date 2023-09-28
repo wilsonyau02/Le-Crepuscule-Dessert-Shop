@@ -1,5 +1,5 @@
 # 🍰 LeCrepusculeDessertShop 🍰
-> 202105 BAIT1023 WEB DESIGN AND DEVELOPMENT Assignment
+> 202105 BAIT1023 Web Design and Development Assignment
 
 Welcome to **LeCrepusculeDessertShop**, a delightful website inspired by the finest dessert shops in France.🇫🇷 
 
