@@ -31,6 +31,7 @@ Welcome to **LeCrepusculeDessertShop**, a delightful website inspired by the fin
 ---
 
 ### 👩‍💻👨‍💻 Team Members:
+- [Wilson Yau Kai Chun](https://github.com/wilsonyau02)
 - [Lee Chun Kai](https://github.com/BananaKing123)
 - [Cheng Jin Tou](https://github.com/ACJT123)
 - Beh Yi Qing
